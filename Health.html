@@ -7,6 +7,8 @@
 		<div id="main_div">
 			<h3>Health Program</h3><br>
 			<button type="button" id="btn_bmi">BMI</button><br>
+			<button type="button" id="btn_health_provider">Health</button><br>
+			<button type="button" id="btn_water_calc">Water</button><br>
 			<button type="button" id="btn_back_main">Back</button>
 		</div>
 		
@@ -22,12 +24,37 @@
 			<label>Ft</label>
 			<input type="number" id="txt_ft"></input>
 			<label>Inch</label>
-			<input type="number" id="txt_inch"></input><br>
+			<input type="number" id="txt_inch"></input>
+			<button type="button" id="btn_bmi_refresh">Refresh</button><br>
 			<label>Weight (lb)</label>
 			<input type="number" id="txt_weight"></input><br>
 			<label id="lbl_bmi"></label><br>
 			<button type="button" id="btn_bmi_submit">Submit</button><br>
 			<button type="button" id="btn_back_calc">Back</button>
+		</div>
+		
+		<div id="health_prodivers_info">
+			<h3>Health Insurance</h3><br>
+			<p>All the info with hyperlinks will be here</p>
+			<button type="button" id="btn_back_health_info">back</button>
+		</div>
+		
+		<div id="water_calculator_info">
+			<h3>Water Calculator Information</h3><br>
+			<p>A water intake calculator can calculate how much water a person should drink based on their weight. </p><br>
+			<button type="button" id="btn_water_calc_info_next">Next</button><br>
+			<button type="button" id="btn_water_calc_info_back">Back</button>
+		</div>
+		
+		<div id="water_calculator">
+			<h3>Water Calc</h3><br>
+			<label>Weight (lb)</label>
+			<input type="number" id="txt_weight_water"></input>
+			<button type="button" id="btn_water_submit">Submit</button>
+			<button type="button" id="btn_refresh_water">Refresh</button><br>
+			<label id="lbl_water"></label><br>
+			<button type="button" id="btn_back_water_calc">Back</button>
+		
 		</div>
 	</body>
 </html>
