@@ -67,7 +67,7 @@ function bmi_screen()
 
 function back_main()
 {
-	alert("Going Back to MAIN");
+	window.location.href = "index.html";
 }
 
 function main_healthprovider()
