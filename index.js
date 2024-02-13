@@ -10,14 +10,12 @@ function Initializer()
 
 function games()
 {
-		window.location.href = "";
-		alert("sent to games (remove)");
+		window.location.href = "Game.html";
 }
 
 function engine()
 {
-	window.location.href = "";
-	alert("Sent to engine (Remove)");
+	window.location.href = "Engine.html";
 }
 
 function health()

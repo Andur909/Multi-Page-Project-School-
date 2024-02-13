@@ -7,11 +7,12 @@ var num2 = "0";
 var operation = "";
 var sign = "+";
 var num3;
-num3 = parseInt(num3)
+num3 = parseFloat(num3)
 
 function addListeners()
 {
 	document.getElementById("btn_calc_clear").addEventListener("click", Clear);
+	document.getElementById("btn_CE").addEventListener("click", CE);
 	document.getElementById("btndot").addEventListener("click",dot);
 	document.getElementById("btnzero").addEventListener("click",zero);
 	document.getElementById("btnone").addEventListener("click",one);
@@ -29,6 +30,8 @@ function addListeners()
 	document.getElementById("btn+-").addEventListener("click",signchanger);
 	document.getElementById("btnequal").addEventListener("click",equal);
 	document.getElementById("btndivision").addEventListener("click",division);
+	document.getElementById("btnabs").addEventListener("click", abs);
+	document.getElementById("btn_pi").addEventListener("click", PI);
 	
 	document.getElementById("btn_back_calc").addEventListener("click", Back_main);
 }
@@ -120,7 +123,7 @@ function signchanger()
 {
 	if (sign === "+")
 	{
-		label = parseInt(label)
+		label = parseFloat(label)
 		num3 = label * 2
 		label = label - num3
 		label =  String(label)
@@ -128,7 +131,7 @@ function signchanger()
 		document.getElementById("calculation").value = label;
 	} else if (sign === "-")
 	{
-		label = parseInt(label)
+		label = parseFloat(label)
 		num3 = label * 2
 		label = (label - num3)
 		label =  String(label)
@@ -210,9 +213,9 @@ function operations()
 {
 	if (operation === "+")
 	{
-		label = parseInt(label)
-		num1 = parseInt(num1)
-		num2 = parseInt(num2)
+		label = parseFloat(label)
+		num1 = parseFloat(num1)
+		num2 = parseFloat(num2)
 		label = num1 + num2
 		label = String(label)
 		num1 = String(num2)
@@ -222,9 +225,9 @@ function operations()
 
 	} else if (operation === "-") 
 	{
-		label = parseInt(label)
-		num1 = parseInt(num1)
-		num2 = parseInt(num2)
+		label = parseFloat(label)
+		num1 = parseFloat(num1)
+		num2 = parseFloat(num2)
 		label = num1 - num2
 		label = String(label)
 		num1 = String(num2)
@@ -233,9 +236,9 @@ function operations()
 		document.getElementById("calculation").value = label;
 	} else if (operation === "x")
 	{
-		label = parseInt(label)
-		num1 = parseInt(num1)
-		num2 = parseInt(num2)
+		label = parseFloat(label)
+		num1 = parseFloat(num1)
+		num2 = parseFloat(num2)
 		label = num1 * num2
 		label = String(label)
 		num1 = String(num2)
@@ -247,9 +250,9 @@ function operations()
 		document.getElementById("calculation").value = label;
 	} else if (operation === "/")
 	{
-		label = parseInt(label)
-		num1 = parseInt(num1)
-		num2 = parseInt(num2)
+		label = parseFloat(label)
+		num1 = parseFloat(num1)
+		num2 = parseFloat(num2)
 		label = num1 / num2
 		label = String(label)
 		num1 = String(num2)
@@ -271,6 +274,29 @@ function Clear()
 	operation = "";
 	label = "";
 	document.getElementById("calculation").value = "";
+}
+
+function CE()
+{
+	label = "";
+	document.getElementById("calculation").value = label;
+}
+
+function abs()
+{
+	if (parseFloat(label) < 0)
+	{
+		label = parseFloat(label);
+		label = label * -1;
+		label = String(label);
+		document.getElementById("calculation").value = label;
+	}
+}
+
+function PI()
+{
+	label = Math.PI;
+	document.getElementById("calculation").value = label;
 }
 
 function Back_main()
