@@ -9,7 +9,7 @@ function Starter()
 	document.getElementById("div_business").style.display = "none";
 	document.getElementById("div_social").style.display = "none";
 	document.getElementById("div_education").style.display = "none";
-	document.getElementById("div_compare").style.display = "none";
+	document.getElementById("search_div").style.display = "none";
 	
 	///Sets Buttons - Main
 	document.getElementById("btn_healthcare").addEventListener("click", healthcare);
@@ -17,8 +17,8 @@ function Starter()
 	document.getElementById("btn_business").addEventListener("click", business);
 	document.getElementById("btn_social_services").addEventListener("click", social);
 	document.getElementById("btn_education").addEventListener("click", education);
-	document.getElementById("btn_compare").addEventListener("click", compare);
 	document.getElementById("btn_back_main").addEventListener("click", back_main);
+	document.getElementById("btn_search_div").addEventListener("click", searchs)
 	
 	///They All do the same, but I need add listener for each
 	document.getElementById("btn_back").addEventListener("click", back);
@@ -31,6 +31,17 @@ function Starter()
 	///Testing
 	document.getElementById("btn_search").addEventListener("click", search);
 
+}
+
+function searchs()
+{
+	document.getElementById("div_main").style.display = "none";
+	document.getElementById("div_healthcare").style.display = "none";
+	document.getElementById("div_engineering").style.display = "none";
+	document.getElementById("div_business").style.display = "none";
+	document.getElementById("div_social").style.display = "none";
+	document.getElementById("div_education").style.display = "none";
+	document.getElementById("search_div").style.display = "block";
 }
 
 function search()
@@ -55,7 +66,7 @@ function healthcare()
 	document.getElementById("div_business").style.display = "none";
 	document.getElementById("div_social").style.display = "none";
 	document.getElementById("div_education").style.display = "none";
-	document.getElementById("div_compare").style.display = "none";
+	document.getElementById("search_div").style.display = "none";
 }
 
 function engineering()
@@ -66,7 +77,7 @@ function engineering()
 	document.getElementById("div_business").style.display = "none";
 	document.getElementById("div_social").style.display = "none";
 	document.getElementById("div_education").style.display = "none";
-	document.getElementById("div_compare").style.display = "none";
+	document.getElementById("search_div").style.display = "none";
 }
 	
 function business()
@@ -77,7 +88,7 @@ function business()
 	document.getElementById("div_business").style.display = "block";
 	document.getElementById("div_social").style.display = "none";
 	document.getElementById("div_education").style.display = "none";
-	document.getElementById("div_compare").style.display = "none";
+	document.getElementById("search_div").style.display = "none";
 }
 
 function social()
@@ -88,7 +99,7 @@ function social()
 	document.getElementById("div_business").style.display = "none";
 	document.getElementById("div_social").style.display = "block";
 	document.getElementById("div_education").style.display = "none";
-	document.getElementById("div_compare").style.display = "none";
+	document.getElementById("search_div").style.display = "none";
 }
 
 function education()
@@ -99,7 +110,7 @@ function education()
 	document.getElementById("div_business").style.display = "none";
 	document.getElementById("div_social").style.display = "none";
 	document.getElementById("div_education").style.display = "block";
-	document.getElementById("div_compare").style.display = "none";
+	document.getElementById("search_div").style.display = "none";
 }
 
 function compare()
@@ -110,7 +121,7 @@ function compare()
 	document.getElementById("div_business").style.display = "none";
 	document.getElementById("div_social").style.display = "none";
 	document.getElementById("div_education").style.display = "none";
-	document.getElementById("div_compare").style.display = "block";
+	document.getElementById("search_div").style.display = "none";
 }
 
 ///Back Button (Works on all DIV)
@@ -124,5 +135,5 @@ function back()
 	document.getElementById("div_business").style.display = "none";
 	document.getElementById("div_social").style.display = "none";
 	document.getElementById("div_education").style.display = "none";
-	document.getElementById("div_compare").style.display = "none";
+	document.getElementById("search_div").style.display = "none";
 }	

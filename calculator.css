@@ -1,0 +1,40 @@
+body
+{
+	background-color: lightblue;
+}
+
+button {
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    border-radius: 8px;
+	margin: 5px 5px;
+	width: 100px;
+}
+
+#div_main
+{
+	text-align: center;
+}
+
+#calculation
+{
+	width: 550px;
+	height: 70px;
+	text-align: center;
+	font-size: 30px;
+}
+
+#btn_back_calc
+{
+	width: 120px;
+}
+
+#btnequal
+{
+		width: 440px;
+}

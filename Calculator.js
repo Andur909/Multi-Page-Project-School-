@@ -32,6 +32,17 @@ function addListeners()
 	document.getElementById("btndivision").addEventListener("click",division);
 	document.getElementById("btnabs").addEventListener("click", abs);
 	document.getElementById("btn_pi").addEventListener("click", PI);
+	document.getElementById("btn_sin").addEventListener("click", sine);
+	document.getElementById("btn_cos").addEventListener("click", cosine);
+	document.getElementById("btn_e").addEventListener("click", e);
+	document.getElementById("btn_log").addEventListener("click", log);
+	document.getElementById("btn_sqrt").addEventListener("click", squareroot);
+	document.getElementById("btn_ln").addEventListener("click", ln);
+
+
+
+
+
 	
 	document.getElementById("btn_back_calc").addEventListener("click", Back_main);
 }
@@ -302,4 +313,50 @@ function PI()
 function Back_main()
 {
 		window.location.href = "index.html";
+}
+
+function sine()
+{
+    label = parseFloat(label);
+    label = Math.sin(label);
+    label = String(label);
+    document.getElementById("calculation").value = label;
+}
+
+function cosine()
+{
+    label = parseFloat(label);
+    label = Math.cos(label); 
+    label = String(label); 
+    document.getElementById("calculation").value = label; 
+}
+
+function e()
+{
+    label = Math.E;
+    document.getElementById("calculation").value = label;
+}
+
+function log()
+{
+    label = parseFloat(label);
+    label = Math.log10(label);
+    label = String(label);
+    document.getElementById("calculation").value = label;
+}
+
+function squareroot()
+{
+    label = parseFloat(label);
+    label = Math.sqrt(label);
+    label = String(label);
+    document.getElementById("calculation").value = label;
+}
+
+function ln()
+{
+    label = parseFloat(label);
+    label = Math.log(label); 
+    label = String(label); 
+    document.getElementById("calculation").value = label; 
 }
