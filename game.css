@@ -36,11 +36,7 @@ button {
     font-size: 16px;
     margin: 4px 12px;
     border-radius: 8px; 
-}
-
-#btn_back2
-{
-	width: 300px;
+	font-size: 30px;
 }
 
 #div_jeopardy
@@ -64,6 +60,22 @@ button {
 }
 
 #txt_info_h
+{
+	font-size: 60px;
+}
+
+#title 
+{
+	font-size: 120px;
+}
+
+#jeo_team, #tof_box
+{
+	height: 60px;
+	font-size: 45px;
+}
+
+#tof_question, #lbl_question, #lbl_jeo_ans
 {
 	font-size: 60px;
 }

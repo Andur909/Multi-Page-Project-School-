@@ -44,3 +44,30 @@ button {
 {
 	text-align: center;
 }
+
+#search_div
+{
+	text-align: center;
+}
+
+#category
+{
+		font-size:80px;
+}
+
+#major_name
+{
+		font-size: 40px;
+}
+
+#major_info
+{
+		font-size: 30px;
+}
+
+#txt_search
+{
+	width: 400px;
+	height: 50px;
+	font-size: 30px;
+}

@@ -6,16 +6,16 @@
 	</head>
 	<body>
 		<div id="main_div">
-			<h3>Health Program</h3><br>
-			<button type="button" id="btn_bmi">BMI</button><br>
-			<button type="button" id="btn_health_provider">Health</button><br>
-			<button type="button" id="btn_water_calc">Water</button><br>
+			<h3 id="title_info">Health Program</h3><br>
+			<button type="button" id="btn_bmi">BMI</button><br><br>
+			<button type="button" id="btn_health_provider">Health</button><br><br>
+			<button type="button" id="btn_water_calc">Water</button><br><br>
 			<button type="button" id="btn_back_main">Back</button>
 		</div>
 		
 		<div id="bmi_info_div">
-			<h3>BMI Info</h3><br>
-			<p>Body Mass Index (BMI) is a widely used measure to estimate a healthy body weight
+			<h3 id="title_info">BMI Info</h3><br>
+			<p id="info">Body Mass Index (BMI) is a widely used measure to estimate a healthy body weight
 			based on an individual's height. Calculated by dividing a person's weight in kilograms
 			by their height in meters squared, BMI categorizes weight into various ranges such as underweight,
 			normal weight, overweight, and obese. While it provides a quick, easy-to-use method for assessing
@@ -27,13 +27,13 @@
 		</div>
 		
 		<div id="bmi_calculation_div">
-			<h3>BMI calculator</h3><br>
-			<label>Ft</label>
+			<h3 id="title_info">BMI calculator</h3><br>
+			<label id="care">Ft</label>
 			<input type="number" id="txt_ft"></input>
-			<label>Inch</label>
+			<label id="care">Inch</label>
 			<input type="number" id="txt_inch"></input>
 			<button type="button" id="btn_bmi_refresh">Refresh</button><br>
-			<label>Weight (lb)</label>
+			<labe id="care"l>Weight (lb)</label>
 			<input type="number" id="txt_weight"></input><br>
 			<label id="lbl_bmi"></label><br>
 			<button type="button" id="btn_bmi_submit">Submit</button><br>
@@ -41,21 +41,21 @@
 		</div>
 		
 		<div id="health_prodivers_info">
-			<h1>Health Insurance</h1><br>
-			<h3>Fidelis Care</h3>
-			<p>Fidelis Care offers a range of affordable health insurance plans,
+			<h1 id="title_info">Health Insurance</h1><br>
+			<h3 id="care">Fidelis Care</h3>
+			<p id="info">Fidelis Care offers a range of affordable health insurance plans,
 			including the Fidelis Care Silver plan. This plan is noted for being one of the cheapest in New York,
 			providing a cost-effective option for those seeking coverage.
 			Fidelis Care's plans are known for their affordability,
 			making them a popular choice among New Yorkers who are looking for budget-friendly healthcare options.</p>
-			<h3>Independent Health</h3>
-			<p>Another cost-effective option in New York is Independent Health.
+			<h3 id="care">Independent Health</h3>
+			<p id="info">Another cost-effective option in New York is Independent Health.
 			They offer competitive rates for their health insurance plans, including the Silver plan.
 			Independent Health is recognized for providing affordable health insurance options,
 			catering to a wide range of needs and budgets.
 			Their plans are designed to offer both affordability and quality coverage.</p>
-			<h3>BlueCross BlueShield</h3>
-			<p>BlueCross is another major provider offering health insurance plans in New York.
+			<h3 id="care">BlueCross BlueShield</h3>
+			<p id="info">BlueCross is another major provider offering health insurance plans in New York.
 			They offer a range of plans, including the Highmark BCBS Silver plan.
 			BlueCross is known for its comprehensive coverage and is a good option
 			for those looking for a balance between cost and extensive healthcare benefits.</p><br>
@@ -63,8 +63,8 @@
 		</div>
 		
 		<div id="water_calculator_info">
-			<h3>Water Calculator Information</h3><br>
-			<p>A Water Intake Calculator helps determine how much water you should drink each day.
+			<h3 id="title_info">Water Calculator Information</h3><br>
+			<p id="info">A Water Intake Calculator helps determine how much water you should drink each day.
 			It usually considers your weight, how active you are, and the climate you live in. For example,
 			a simple guideline is to drink half your body weight in ounces of water daily. So, if you weigh 150 pounds,
 			aim for 75 ounces of water. This amount can change if you're very active or in a hot environment. Drinking enough
@@ -75,8 +75,8 @@
 		</div>
 		
 		<div id="water_calculator">
-			<h3>Water Calc</h3><br>
-			<label>Weight (lb)</label>
+			<h3 id="title_info">Water Calculator</h3><br>
+			<label id="care">Weight (lb)</label>
 			<input type="number" id="txt_weight_water"></input>
 			<button type="button" id="btn_water_submit">Submit</button>
 			<button type="button" id="btn_refresh_water">Refresh</button><br>

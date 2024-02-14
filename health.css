@@ -12,10 +12,62 @@ button {
     display: inline-block;
     font-size: 16px;
     margin: 4px 12px;
-    border-radius: 8px; 
+    border-radius: 8px;
 }
 
 #main_div
 {
 	text-align: center;
+}
+
+#bmi_info_div
+{
+	text-align: center;
+}
+
+#bmi_calculation_div
+{
+	text-align: center;
+}
+
+#health_prodivers_info
+{
+	text-align: center;
+}
+
+#water_calculator_info
+{
+	text-align: center;
+}
+
+#water_calculator
+{
+	text-align: center;
+}
+
+#title_info 
+{
+	font-size: 50px;
+}
+
+#info 
+{
+	font-size: 20px;
+}
+
+#care, #lbl_water, #lbl_bmi
+{
+	font-size: 30px;
+}
+
+#txt_weight_water, #txt_weight, #txt_inch, #txt_ft
+{
+	height:35px;
+	font-size: 25px;
+}
+
+#btn_back_main, #btn_water_calc, #btn_health_provider, #btn_bmi
+{
+	font-size: 40px;
+	margin: 5px 10px;
 }
